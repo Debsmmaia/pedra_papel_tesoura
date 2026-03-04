@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: #34495e;">Pedra, Papel e Tesoura!</h1>
+    <section>
+        <div class="container">
+            <form id="jogo">
+                <div class="selecao">
+                    <label for="escolhaJogador">Escolha sua opção</label> <br>
+                    <select id="escolhaJogador">
+                        <option value="pedra">Pedra</option>
+                        <option value="papel">Papel</option>
+                        <option value="tesoura">Tesoura</option>
+                    </select>
+                </div>
+            </form>
+            <button type="button" id="botaoJogar">Jogar!</button>
+        </div>
+
+        <div class="divResultado">
+            <h2>Resultado</h2>
+            <span id="resultado"></span>
+        </div>
+    </section>
+
+    <section class="placar-box">
+        <h2 style="margin: 2px">Placar</h2>
+        <div class="placarDiv">
+            <div class="placar">
+                <h3>Jogador</h3>
+                <span id="pontosJogador" class="resultado"></span>
+            </div>
+            <div class="placar">
+                <h3>Computador</h3>
+                <span id="pontosComputador" class="resultado"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
